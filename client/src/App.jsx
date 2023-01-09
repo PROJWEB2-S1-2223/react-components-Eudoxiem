@@ -14,7 +14,7 @@ function App(){
       <div>
         <h1>Ma liste de courses</h1>
         <ul>
-        const list=article.map((article)=> <li article key ={article.id}> {article.name}) </li>
+        const list=article.map((article)=> <li article key ={article.id}> {article.name}{box}) </li>
         </ul>
        /*{<input type="checkbox"/>}*/
       </div>
