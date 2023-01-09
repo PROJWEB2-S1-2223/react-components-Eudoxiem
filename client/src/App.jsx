@@ -1,31 +1,23 @@
 import React, { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
-
-function App() {
-  const [count, setCount] = useState(0);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+function App(){
+  const box = <input type="checkbox"/>;
+  const article= [ { id:0,name:"poireaux",},
+                   {id:1,name:"oignons",},
+                   {id:2,name:"céléri",}
+                 ]
 
   return (
-    <div className="App">
+
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Ma liste de courses</h1>
+        <ul>
+        const list=article.map((article)=> <li article key ={article.id}> {article.name}) </li>
+        </ul>
+       /*{<input type="checkbox"/>}*/
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((countParam) => countParam + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </div>
   );
 }
 
