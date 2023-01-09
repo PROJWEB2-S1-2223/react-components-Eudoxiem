@@ -1,0 +1,165 @@
+{
+  "name": "JavaScript",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "containerEnv": {
+    "NODE_ENV": "development"
+  },
+  "extensions": [
+    "cs50.extension-uninstaller",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "GitHub.github-vscode-theme",
+    "humao.rest-client",
+    "ms-vsliveshare.vsliveshare",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "settings": {
+    "breadcrumbs.enabled": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.colorDecorators": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.folding": false,
+    "editor.foldingHighlight": false,
+    "editor.fontFamily": "'FiraCode NF', 'FiraCode Nerd Font', 'Fira Code', 'FiraCode', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "editor.formatOnSave": false,
+    "editor.guides.indentation": false,
+    "editor.hover.enabled": false,
+    "editor.lightbulb.enabled": false,
+    "editor.matchBrackets": "never",
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.renderWhitespace": "selection",
+    "editor.selectionHighlight": false,
+    "editor.semanticTokenColorCustomizations": {
+      "[GitHub Dark Default]": {
+        "rules": {
+          "type": "#FF7E76"
+        }
+      },
+      "[GitHub Light Default]": {
+        "rules": {
+          "type": "#D2343F"
+        }
+      }
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "eslint.format.enable": false,
+    "eslint.validate": [
+      "javascript"
+    ],
+    "explorer.compactFolders": false,
+    "extensions.ignoreRecommendations": true,
+    "extension-uninstaller.uninstall": [
+      "github.copilot",
+      "github.copilot-nightly",
+      "ms-toolsai.jupyter",
+      "tabnine.tabnine-vscode"
+    ],
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+      "**/.*": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    },
+    "git.autofetch": true,
+    "git.decorations.enabled": false,
+    "html.suggest.html5": false,
+    "javascript.suggest.enabled": false,
+    "remote.otherPortsAttributes": {
+      "onAutoForward": "silent"
+    },
+    "terminal.integrated.commandsToSkipShell": [
+      "workbench.action.toggleSidebarVisibility"
+    ],
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "args": [
+          "--login"
+        ],
+        "icon": "terminal",
+        "path": "bash"
+      },
+      "JavaScript Debug Terminal": null
+    },
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never", /* Remove decoration for each command */
+    "terminal.integrated.tabs.description": "${task}${separator}${local}", /* Remove cwdFolder from description */
+    "terminal.integrated.tabs.showActiveTerminal": "never",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorCustomizations": {
+      "editor.lineHighlightBorder": "#0000", /* Disable gray border-{bottom,top} on active line */
+      "editorError.foreground": "#0000", /* Disable red squiggles */
+      "editorWarning.foreground": "#0000", /* Disable yellow squiggles */
+      "editorGutter.addedBackground": "#0000",
+      "editorGutter.deletedBackground": "#0000",
+      "editorGutter.modifiedBackground": "#0000", /* Disable yellow bars to left of lines modified since last commit */
+      "[GitHub Dark Default]": {
+        "activityBar.background": "#000",
+        "editor.background": "#000",
+        "editor.lineHighlightBackground": "#0000",
+        "editor.lineHighlightBorder": "#0000",
+        "editorWhitespace.foreground": "#59a5fc",
+        "panel.background": "#000",
+        "sideBar.background": "#000",
+        "terminal.foreground": "#fff",
+        "terminal.background": "#000"
+      },
+      "[GitHub Light Default]": {
+        "activityBar.background": "#fff",
+        "editor.background": "#fff",
+        "editor.lineHighlightBackground": "#fff0",
+        "editor.lineHighlightBorder": "#fff0",
+        "editorWhitespace.foreground": "#1167d7",
+        "panel.background": "#fff",
+        "sideBar.background": "#fff",
+        "terminal.foreground": "#000",
+        "terminal.background": "#fff"
+      }
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.welcomePage.walkthroughs.openOnInstall": false
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "cd client && npm install",
+  "remoteUser": "node",
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite dev server",
+      "onAutoForward": "silent"
+    }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "silent"
+  }
+}
